@@ -1,0 +1,24 @@
+timm  
+scikit-learn 
+scikit-image  
+PyYAML 
+lpips  
+pytorch-msssim 
+tensorboard 
+easydict 
+cloup  
+lmdb 
+kornia 
+beautifulsoup4 
+scikit-video 
+clean-fid 
+transformers==4.57.1
+pandas>=2.1.0,<2.4.0
+diffusers 
+peft
+PyMCubes
+datasets>4.0.0
+accelerate
+opencv-python>4.8.1
+numpy>=1.24,<2.0
+# opencv-python-headless  

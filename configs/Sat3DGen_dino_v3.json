@@ -1,0 +1,44 @@
+{
+  "_class_name": "Sat3DGen",
+  "_diffusers_version": "0.30.0",
+  "opt": {
+    "backbone": "dinov3-large-sat",
+    "sr_padding_mode": "reflect",
+    "representation_type": "oneplane",
+    "pad": 0.125,
+    "network": {
+      "encoder3d": {
+        "hidden_dim": 4,
+        "mlp_ratio": 4,
+        "num_heads": 2,
+        "num_repeats": 16
+      },
+      "no_hidden_states": true, 
+      "no_cls_token": true,
+      "color_channels": 24,
+      "image_size": 256,
+      "sr_factor": 2,
+      "latent_channel": 4,
+      "latent_size": 32,
+      "point_sampling_kwargs": {
+        "aabb_strict": true,
+        "data_type": "vigor",
+        "num_importance": 48,
+        "num_points": 48
+      },
+      "position_scale_factor": 1,
+      "ray_marching_kwargs": {
+        "density_clamp_mode": "mipnerf",
+        "scale_color": false,
+        "use_mid_point": true,
+        "use_white_background": false
+      },
+      "triplane": {
+        "dim": 32,
+        "ch_mult": [1,2,4,4,4]
+        
+      },
+      "sky": {}
+    }
+  }
+}

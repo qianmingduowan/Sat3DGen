@@ -163,7 +163,7 @@ export SAT3DGEN_DINOV3_SAT_PATH=/path/to/your/dinov3-vitl16-pretrain-sat493m
 
 Our experiments in the released code are based on [**VIGOR**](https://github.com/Jeff-Zilence/VIGOR). Please download the original VIGOR dataset first.
 
-The original VIGOR release provides the satellite and panorama RGB images. We release the project-specific supplements on HuggingFace (available by Apr 30, 2025):
+The original VIGOR release provides the satellite and panorama RGB images. We release the project-specific supplements on HuggingFace (available now):
 
 🤗 **[https://huggingface.co/datasets/qian43/VIGOR_SAT3DGEN_add_skymask_DSM_satdepth](https://huggingface.co/datasets/qian43/VIGOR_SAT3DGEN_add_skymask_DSM_satdepth)**
 

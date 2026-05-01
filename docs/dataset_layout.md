@@ -31,9 +31,6 @@ The code does **not** include a built-in `data/vigor` directory. Prepare your ow
 YOUR_VIGOR_ROOT/
 |-- train__corrected_all_3city_remove_building.txt
 |-- test_remove_building.txt
-|-- val__corrected_remove_building.txt
-|-- val__corrected.txt
-|-- val.txt
 |-- Seattle/
 |   |-- satellite/
 |   |-- panorama/

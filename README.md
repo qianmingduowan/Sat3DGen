@@ -1,7 +1,7 @@
 # Sat3DGen
 ### [ICLR 2026] Sat3DGen: Comprehensive Street-Level 3D Scene Generation from Single Satellite Image
 
-[![arXiv](https://img.shields.io/badge/arXiv-coming_soon-b31b1b.svg)]()
+[![arXiv](https://img.shields.io/badge/arXiv-b31b1b.svg)](https://arxiv.org/abs/2605.14984)
 [![Paper](https://img.shields.io/badge/OpenReview-ICLR_2026-8c1b13)](https://openreview.net/forum?id=E7JzkZCofa)
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://qianmingduowan.github.io/Sat3DGen_project_page/)
 [![HuggingFace](https://img.shields.io/badge/🤗_HuggingFace-Model-orange)](https://huggingface.co/qian43/Sat3DGen)

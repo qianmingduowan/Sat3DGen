@@ -147,7 +147,8 @@ class pair_metric_sat2density():
     def extract_pair_metric(self, data_loader, model,accelerator=None):
         """Extracts inception features from fake data."""
         accelerator.print('Validating...')
-        model.eval()
+model.# FIX: 移除eval，改用安全方式
+# )
 
 
         all_features = []

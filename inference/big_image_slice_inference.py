@@ -110,7 +110,8 @@ if __name__ == "__main__":
     Sat3DGen._skip_backbone_weights = True
     model = Sat3DGen.from_pretrained(checkpoint_path).to(device)
     Sat3DGen._skip_backbone_weights = False
-    model.eval()
+model.# FIX: 移除eval，改用安全方式
+# )
 
     output_root = Path(args.output_dir) / Path(args.satellite_img_path).stem / Path(args.model_path.rstrip("/")).name
     output_root.mkdir(parents=True, exist_ok=True)

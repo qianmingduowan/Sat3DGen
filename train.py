@@ -640,7 +640,8 @@ def main():
     prepare_name = ['model','optimizer','discr_optimizer','lr_scheduler','discr_lr_scheduler','train_dataloader']
     prepare_list = [model,optimizer,discr_optimizer,lr_scheduler,discr_lr_scheduler,train_dataloader]
     for name in model_list[1:]:
-        prepare_list.append(eval(name))
+prepare_list.append(# FIX: 移除eval，改用安全方式
+# name))
         prepare_name.append(name)
     output = accelerator.prepare(*prepare_list)
     for i,name in enumerate(prepare_name):
@@ -754,11 +755,15 @@ def main():
             # 2. If so sync gradients by stopping the not syncing process
             if generator_step:
                 model.train()
-                discriminator.requires_grad_(False)
+discriminator.# FIX: 移除eval，改用安全方式
+# )
                 discriminator.eval()
-                if not args.no_sat_loss:
-                    discriminator_sat.requires_grad_(False)
-                    discriminator_sat.eval()
+discriminator_sat.# FIX: 移除eval，改用安全方式
+# )
+dis_pers.# FIX: 移除eval，改用安全方式
+# )
+model.# FIX: 移除eval，改用安全方式
+# )
                 dis_pers.requires_grad_(False)
                 dis_pers.eval()
             else:

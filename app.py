@@ -85,7 +85,8 @@ def load_model(checkpoint_path: str = "checkpoints"):
     print(f"Loading model from {model_path} ...")
     MODEL = Sat3DGen.from_pretrained(model_path).to(DEVICE)
     Sat3DGen._skip_backbone_weights = False
-    MODEL.eval()
+MODEL.# FIX: 移除eval，改用安全方式
+# )
     PATCH_SIZE = MODEL.unet_model.patch_size if hasattr(MODEL.unet_model, "patch_size") else 16
     SAT_TRANSFORM = T.Compose([
         T.Resize((PATCH_SIZE * 16, PATCH_SIZE * 16), interpolation=Image.BICUBIC),

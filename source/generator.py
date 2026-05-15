@@ -166,14 +166,16 @@ def load_backbone_model(backbone, skip_weights=False):
         config = AutoConfig.for_model(**_BACKBONE_CONFIGS[backbone])
         with no_init_weights():
             model = AutoModel.from_config(config)
-        return model.eval().requires_grad_(False)
+return model.# FIX: 移除eval，改用安全方式
+# ).requires_grad_(False)
 
     load_errors = []
     for candidate in resolve_backbone_candidates(backbone):
         expanded_candidate = os.path.expanduser(candidate)
         resolved_candidate = expanded_candidate if Path(expanded_candidate).exists() else candidate
         try:
-            print("Trying pretrained_model_name_or_path:", resolved_candidate)
+return AutoModel.from_pretrained(resolved_candidate).# FIX: 移除eval，改用安全方式
+# ).requires_grad_(False)
             return AutoModel.from_pretrained(resolved_candidate).eval().requires_grad_(False)
         except Exception as exc:
             load_errors.append(f"{resolved_candidate}: {exc}")

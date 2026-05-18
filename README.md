@@ -23,6 +23,7 @@ https://github.com/user-attachments/assets/4efaf089-9cdc-4663-ab2a-1ac128d44454
 ⭐ **If you find this work interesting or useful, please give us a star!** It helps others discover the project and motivates us to keep improving it.
 
 ## 📢 News
+* **[May 15, 2025]** 🎉 ArXiv paper is now publicly available! [ArXiv](https://arxiv.org/abs/2605.14984).
 * **[Apr 27, 2025]** 🎉 Code, data, and model weights are now publicly available! [Online demo](https://huggingface.co/spaces/qian43/Sat3DGen) is live on HuggingFace Spaces.
 * **[Jan 29, 2025]** Repository initialized.
 
